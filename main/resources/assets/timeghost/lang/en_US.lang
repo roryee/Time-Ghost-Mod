@@ -1,0 +1,10 @@
+tile.timeghost:cabinet.name=Cabinet
+tile.timeghost:cabinet.oak.name=Oak Cabinet
+tile.timeghost:cabinet.spruce.name=Spruce Cabinet
+tile.timeghost:cabinet.birch.name=Birch Cabinet
+tile.timeghost:cabinet.jungle.name=Jungle Wood Cabinet
+tile.timeghost:cabinet.acacia.name=Acacia Cabinet
+tile.timeghost:cabinet.darkOak.name=Dark Oak Cabinet
+item.timeghost:soupCan.name=Soup Can
+item.timeghost:soupCanEmpty.name=Empty Soup Can
+item.timeghost:ironNugget.name=Iron Nugget

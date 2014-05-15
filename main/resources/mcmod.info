@@ -1,0 +1,16 @@
+[
+{
+  "modid": "timeghost",
+  "name": "Time Ghost Mod",
+  "description": "This mod creates timeghosts that do some interesting stuff....",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["roryee"],
+  "credits": "roryee - code\nCrazyPieRiot - art",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
