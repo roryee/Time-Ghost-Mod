@@ -38,12 +38,12 @@ public class EntityTG extends Entity {
     }
 
     @Override
-    protected void readEntityFromNBT(NBTTagCompound var1) {
+    protected void readEntityFromNBT(NBTTagCompound compound) {
 
     }
 
     @Override
-    protected void writeEntityToNBT(NBTTagCompound var1) {
+    protected void writeEntityToNBT(NBTTagCompound compound) {
 
     }
 }
