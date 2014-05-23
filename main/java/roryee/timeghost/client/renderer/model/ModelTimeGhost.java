@@ -30,7 +30,7 @@ public class ModelTimeGhost extends ModelBase {
         setTextureOffset("Torso.Back1", 42, 0);
         setTextureOffset("Torso.Back2", 42, 12);
 
-        Head.setRotationPoint(0F, 0F, 0F);
+        Head.setRotationPoint(0F, -25F, 0F);
         setRotation(Head, 0F, 0F, 0F);
         Head.mirror = true;
         Head.addBox("Front", -4F, -4F, -5F, 8, 8, 4);
@@ -39,7 +39,7 @@ public class ModelTimeGhost extends ModelBase {
         Head.addBox("Mid2", -3F, -2F, 1F, 6, 6, 3);
         Head.addBox("Trail1", 0F, 1F, 10F, 1, 1, 1);
 
-        Torso.setRotationPoint(0F, 9F, 0F);
+        Torso.setRotationPoint(0F, -16F, 0F);
         Torso.rotateAngleX = (float)Math.PI/9f;
         Torso.mirror = true;
         Torso.addBox("Core", -3F, -3F, -4F, 6, 15, 6);

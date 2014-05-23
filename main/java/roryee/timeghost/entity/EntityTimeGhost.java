@@ -13,7 +13,11 @@ public class EntityTimeGhost extends EntityTG {
 
     public EntityTimeGhost(World world) {
         super(world);
-        setSize(0.7f, 0.7f);
+        this.width = 0.8f;
+        this.height = 1.8f;
+        this.boundingBox.maxX = this.boundingBox.minX + (double)this.width;
+        this.boundingBox.maxZ = this.boundingBox.minZ + (double)this.width;
+        this.boundingBox.maxY = this.boundingBox.minY + (double)this.height;
     }
 
     public EntityTimeGhost(World world, double x, double y, double z) {
