@@ -38,7 +38,7 @@ public class TimeGhostMod {
     @EventHandler
     public void init(FMLInitializationEvent event){
         proxy.registerTileEntities();
-        proxy.registerRenderers();
+        proxy.initRenderers();
 
         ModEntities.init();
         ModItems.registerRecipes();

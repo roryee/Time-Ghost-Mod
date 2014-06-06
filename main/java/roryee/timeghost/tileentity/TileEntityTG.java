@@ -18,6 +18,10 @@ public class TileEntityTG extends TileEntity {
         inventory = new ItemStack[invSize];
     }
 
+    public void setInventorySize(int invSize){
+        inventory = new ItemStack[invSize];
+    }
+
     public ForgeDirection getOrientation() {
         return orientation;
     }

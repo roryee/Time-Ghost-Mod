@@ -8,7 +8,7 @@ import roryee.timeghost.tileentity.TileEntityCabinet;
  * @author roryee https://github.com/roryee
  */
 public class CommonProxy {
-    public void registerRenderers(){
+    public void initRenderers(){
 
     }
 

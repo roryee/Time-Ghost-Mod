@@ -13,6 +13,7 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
+import roryee.timeghost.client.renderer.tileentity.TileEntityCabinetRenderer;
 import roryee.timeghost.reference.Names;
 import roryee.timeghost.tileentity.TileEntityCabinet;
 
@@ -22,8 +23,6 @@ import java.util.List;
  * @author roryee https://github.com/roryee
  */
 public class BlockCabinet extends BlockTG implements ITileEntityProvider {
-    @SideOnly(Side.CLIENT)
-    IIcon[] topIcon, sideIcon;
 
     public BlockCabinet() {
         super(Material.wood);
@@ -53,33 +52,18 @@ public class BlockCabinet extends BlockTG implements ITileEntityProvider {
     }
 
     @Override
-    public BlockCabinet setBlockName(String name) {
-        super.setBlockName(name);
-        return this;
+    public boolean renderAsNormalBlock(){
+        return false;
     }
 
     @Override
-    @SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister register) {
-        topIcon = new IIcon[Names.Blocks.CABINET_SUBTYPES.length];
-        sideIcon = new IIcon[Names.Blocks.CABINET_SUBTYPES.length];
-
-        for (int i = 0; i < Names.Blocks.CABINET_SUBTYPES.length; i++) {
-            topIcon[i] = register.registerIcon(String.format("%s.%s_top", getUnwrappedUnlocalizedName(getUnlocalizedName()), Names.Blocks.CABINET_SUBTYPES[i]));
-            sideIcon[i] = register.registerIcon(String.format("%s.%s_side", getUnwrappedUnlocalizedName(getUnlocalizedName()), Names.Blocks.CABINET_SUBTYPES[i]));
-        }
+    public boolean isOpaqueCube(){
+        return false;
     }
 
     @Override
-    @SideOnly(Side.CLIENT)
-    public IIcon getIcon(int side, int meta) {
-        meta = MathHelper.clamp_int(meta, 0, Names.Blocks.CABINET_SUBTYPES.length - 1);
-
-        if (ForgeDirection.getOrientation(side) == ForgeDirection.UP ||
-                ForgeDirection.getOrientation(side) == ForgeDirection.DOWN) {
-            return topIcon[meta];
-        } else {
-            return sideIcon[meta];
-        }
+    public int getRenderType(){
+        return TileEntityCabinetRenderer.renderId;
     }
+
 }

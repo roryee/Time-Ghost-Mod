@@ -18,58 +18,48 @@ public class ModBlocks {
     }
 
     public static void registerRecipes() {
-//        if (ConfigBlock.multiWoodCabinet) {
         GameRegistry.addRecipe(new ItemStack(cabinet, 1, 0),
                 "PPP",
-                "PTP",
+                "P T",
                 "PPP",
                 'P', new ItemStack(Blocks.planks, 1, 0),
                 'T', new ItemStack(Blocks.trapdoor, 1)
         );
         GameRegistry.addRecipe(new ItemStack(cabinet, 1, 1),
                 "PPP",
-                "PTP",
+                "P T",
                 "PPP",
                 'P', new ItemStack(Blocks.planks, 1, 1),
                 'T', new ItemStack(Blocks.trapdoor, 1)
         );
         GameRegistry.addRecipe(new ItemStack(cabinet, 1, 2),
                 "PPP",
-                "PTP",
+                "P T",
                 "PPP",
                 'P', new ItemStack(Blocks.planks, 1, 2),
                 'T', new ItemStack(Blocks.trapdoor, 1)
         );
         GameRegistry.addRecipe(new ItemStack(cabinet, 1, 3),
                 "PPP",
-                "PTP",
+                "P T",
                 "PPP",
                 'P', new ItemStack(Blocks.planks, 1, 3),
                 'T', new ItemStack(Blocks.trapdoor, 1)
         );
         GameRegistry.addRecipe(new ItemStack(cabinet, 0, 4),
                 "PPP",
-                "PTP",
+                "P T",
                 "PPP",
                 'P', new ItemStack(Blocks.planks, 1, 4),
                 'T', new ItemStack(Blocks.trapdoor, 1)
         );
         GameRegistry.addRecipe(new ItemStack(cabinet, 0, 5),
                 "PPP",
-                "PTP",
+                "P T",
                 "PPP",
                 'P', new ItemStack(Blocks.planks, 1, 5),
                 'T', new ItemStack(Blocks.trapdoor, 1)
         );
-//        } else {
-//            GameRegistry.addRecipe(new ItemStack(oakCabinet),
-//                    "PPP",
-//                    "PTP",
-//                    "PPP",
-//                    'P', new ItemStack(Blocks.planks, 1),
-//                    'T', new ItemStack(Blocks.trapdoor, 1)
-//            );
-//        }
 
     }
 }

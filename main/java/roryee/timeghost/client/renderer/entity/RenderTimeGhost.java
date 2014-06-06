@@ -13,7 +13,7 @@ import roryee.timeghost.reference.Textures;
 
 @SideOnly(Side.CLIENT)
 public class RenderTimeGhost extends Render {
-    private static final ResourceLocation texture = new ResourceLocation(Reference.MOD_ID, Textures.MODEL_LOCATION + Textures.TIME_GHOST_MODEL);
+    private static final ResourceLocation texture = Textures.TIME_GHOST_MODEL;
 
     protected ModelTimeGhost model;
 
